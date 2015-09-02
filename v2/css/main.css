@@ -4,6 +4,8 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    height: 100%;
+    width: 100%;
 }
 
 ::-moz-selection {
@@ -55,16 +57,81 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 body {
-    background-color: lightgrey;
-    color: #000;
+    width: 100%;
+    height: 100%;
+    font-family: Lora, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
 }
 
-nav.navbar {
+.light {
+    font-weight: 400;
+}
+
+/*nav.navbar.navbar-custom.navbar-fixed-top {
     border: 1px solid red;
+}*/
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #000;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+}
+
+a {
+    color: #42dca3;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,:focus {
+    text-decoration: none;
+    color: #1d9b6c;
 }
 
 
+.intro {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    text-align: center;
+    background-color: #000;
+    background: url(../img/desk.jpeg) no-repeat scroll;
+    background-size: cover;
+    /*-webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);*/
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+    color: #42dca3;
+    text-shadow: 5px 5px #000;
+
+}
+
+.brand-heading {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.intro-text {
+    font-size: 26px;
+}
 
 
 
