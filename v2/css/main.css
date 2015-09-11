@@ -66,6 +66,7 @@ body {
     height: 100%;
     font-family: Lora, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
+    background-color: #000;
 }
 
 .light {
@@ -108,7 +109,7 @@ a:hover,:focus {
     text-align: center;
     background-color: #000;
     background: url(../img/desk.jpeg) no-repeat scroll;
-    background-size: cover;
+    background-size: 100% auto;
     /*-webkit-filter: blur(3px);
   -moz-filter: blur(3px);
   -o-filter: blur(3px);
@@ -130,7 +131,7 @@ a:hover,:focus {
 }
 
 .intro-text {
-    font-size: 26px;
+    font-size: 40px;
 }
 
 
