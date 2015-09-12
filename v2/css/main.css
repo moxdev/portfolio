@@ -120,9 +120,13 @@ a:hover,:focus {
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
-    color: #42dca3;
-    text-shadow: 5px 5px #000;
+    color: #fff;
+    text-shadow: 2px 2px #000;
 
+}
+
+.intro-body .container-fluid {
+    background-color: #c80a48;
 }
 
 .brand-heading {
@@ -132,6 +136,81 @@ a:hover,:focus {
 
 .intro-text {
     font-size: 40px;
+}
+
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 90px;
+  color: #fff;
+  text-shadow: none;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
+}
+
+@-moz-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
+}
+/*---------------------------------------*/
+
+.svg-section {
+    background-color: #c80a48;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+     /*reset the text-align*/
+    /*text-align:left;*/
+    /* inline-block space fix */
+    margin-right:-4px;
 }
 
 
