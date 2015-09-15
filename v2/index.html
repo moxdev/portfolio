@@ -60,11 +60,11 @@
     </nav>
     <!-- /.navbar navbar-custom navbar-fixed-top -->
 
-<header class="intro img-responsive">
+<header id="intro">
     <div class="intro-body">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-8 col-md-offset-2 glass">
                     <h1 class="brand-heading">Shane Biggs<span class="blinking-cursor">_</span></h1>
                     <p class="intro-text">Come have a look at some of my work</p>
                     <!-- /.intro-text -->
@@ -80,71 +80,182 @@
 </header>
 <!-- /.intro -->
 
-<section id="profile" class="container content text-center">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+<section id="profile" class="container text-center">
+
             <h1>Aspiring WebDeveloper</h1>
+
+            <hr>
+
             <p>A recent graduate of Devbootcamp in San Francisco looking for full time opportunities in the Washington DC / Baltimore Metro area.</p>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta qui, soluta cumque quos non, eos magnam dolorem quaerat unde perspiciatis odit similique commodi consectetur accusamus eum totam sapiente mollitia harum, a autem tempora! Totam cumque, facilis nemo dolore doloremque! Doloremque nulla accusamus maiores, laborum perferendis quidem, aliquam ducimus tenetur amet.</p>
 
-        </div>
-        <!-- /.col-md-8 col-md-offset-2 -->
-    </div>
-    <!-- /.row -->
-</section>
-<!-- /#profile.container -->
 
-<section id="portfolio" class="container text-center">
-    <div class="row">
-        <div class="col-md-12 portfolio-header">
+</section>
+<!-- /#profile.container-fluid -->
+
+<!-- <hr> --> <!-- section divider -->
+
+<section id="portfolio" class="container-fluid text-center grey-section">
+    <div class="row container">
+        <div class="col-md-8 col-md-offset-3 portfolio-header">
             <h1>Current Projects</h1>
+
+            <hr>
         </div>
         <!-- /.col-md-12 portfolio-header -->
     </div>
     <!-- /.row -->
 
-    <div class="row">
-        <div class="col-md-4 portfolio-item">
-            <a href="http://tripstarter.herokuapp.com/#/" title="tripstarter" target="_blank">
-                <img class="img-responsive" src="img/trip2.png" alt="placeholder">
-            </a>
-            <h3>TripStarter</h3>
-            <p>DBC Final Project</p>
-            <p>Tech Stack: Rails API, AngularJS, Bootstrap, HTML5, CSS3, JQuery</p>
-        </div>
-        <!-- /.col-md-4 portfolio-item -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <a href="http://tripstarter.herokuapp.com/#/" title="tripstarter" target="_blank">
+                    <img class="img-responsive" src="img/trip2.png" alt="placeholder">
+                </a>
+                <h3>TripStarter</h3>
+                <p>DBC Final Project</p>
+                <p>Tech Stack: Rails API, AngularJS, Bootstrap, HTML5, CSS3, JQuery</p>
+            </div>
+            <!-- /.col-md-4 portfolio-item -->
 
-        <div class="col-md-4 portfolio-item">
-            <a href="http://germantownorthopedic.com/" title="germantownorthopedic" target="_blank">
-                <img class="img-responsive" src="/img/go.png" alt="placeholder">
-            </a>
-            <h3>Gemantown Orthopedic</h3>
-            <p>My first freelance project for a local client.</p>
-            <p>Tech Stack: HTML5, CSS3, Bootstrap, JQuery, SEO</p>
+            <div class="col-md-4 portfolio-item">
+                <a href="http://germantownorthopedic.com/" title="germantownorthopedic" target="_blank">
+                    <img class="img-responsive" src="/img/go.png" alt="placeholder">
+                </a>
+                <h3>Gemantown Orthopedic</h3>
+                <p>My first freelance project for a local client.</p>
+                <p>Tech Stack: HTML5, CSS3, Bootstrap, JQuery, SEO</p>
 
-        </div>
-        <!-- /.col-md-4 portfolio-item -->
+            </div>
+            <!-- /.col-md-4 portfolio-item -->
 
-        <div class="col-md-4 portfolio-item">
-            <a href="#" title="coming-soon">
-                <img class="img-responsive" src="img/coming.png" alt="placeholder">
-            </a>
-            <h3>Good Things</h3>
-            <p>Coming Soon!</p>
+            <div class="col-md-4 portfolio-item">
+                <a href="#" title="coming-soon">
+                    <img class="img-responsive coming-soon" src="img/coming-soon.png" alt="coming-soon placeholder">
+                </a>
+                <h3>Good Things</h3>
+                <p>Coming Soon! Quickly enter and save the good things that happened to you that day to help remind you to appreciate the little things in life.</p>
+            </div>
+            <!-- /.col-md-4 portfolio-item -->
         </div>
-        <!-- /.col-md-4 portfolio-item -->
+        <!-- /.row -->
     </div>
-    <!-- /.row -->
+    <!-- /.container -->
 </section>
-<!-- /#portfolio.container -->
+<!-- /#portfolio.container-fluid -->
 
-<section id="resume" class="container">
-    <div class="row text-center">
-        <h2>My Details</h2>
-        <p>Please feel free to contact me if you like what you see!</p>
-        <div class="col-md-12">
-            <a href="download/resume.pdf" download="Shane-Biggs-Resume.pdf" title="Download Resume" class="btn btn-lg btn-default">Resume</a>
+<!-- <hr> --> <!-- section divider -->
+
+<section id="skills" class=" container text-center">
+
+        <div class="row skills-header">
+            <div class="col-md-8 col-md-offset-2">
+                <h1>Skills</h1>
+        <hr> <!-- section divider -->
+            </div>
+
+            <!-- /.col-md-12 -->
+        </div>
+        <!-- /.row -->
+
+
+        <div id="small-skills" class="visible-xs visible-sm">
+                <h4>* HTML5</h4>
+                <h4>* CSS3</h4>
+                <h4>* Javascript</h4>
+                <h4>* JQuery</h4>
+                <h4>* Github</h4>
+                <h4>* Wordpress</h4>
+                <h4>* Adobe Creative Cloud</h4>
+        </div>
+        <!-- /.visible-xs visible-sm -->
+
+        <div class="skills-section">
+            <div class="hidden-xs hidden-sm">
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <img src="img/html5.png" alt="HTML5" />
+                    </div>
+                    <!-- /.col-md-3 -->
+
+                    <div class="col-md-3">
+                        <img src="img/css3.png" alt="CSS3"/>
+                    </div>
+                    <!-- /.col-md-3 -->
+
+                    <div class="col-md-3">
+                        <img src="img/js.png" alt="Javascript"/>
+                    </div>
+                    <!-- /.col-md-3 -->
+
+                    <div class="col-md-3">
+                        <img src="img/jquery.png" alt="JQuery"/>
+                    </div>
+                    <!-- /.col-md-3 -->
+
+                </div>
+            <!-- /.row.skills-section-->
+            </div>
+            <!-- /.hidden-xs.hidden.sm-->
+        </div>
+        <!-- /.container-fluid-->
+
+        <div class="hidden-xs hidden-sm">
+            <div class="row-centered skills-section">
+                <div class="col-md-3 col-centered">
+                    <img src="img/github.png" alt="Github" />
+                </div>
+                <!-- /.col-md-3 -->
+
+                <div class="col-md-3 col-centered">
+                    <img src="img/bootstrap.png" alt="Wordpress" width="113" height="113" />
+                </div>
+                <!-- /.col-md-3 -->
+
+                <div class="col-md-3 col-centered">
+                    <img src="img/cc.png" alt="Adobe Creative Cloud" />
+                </div>
+                <!-- /.col-md-3 -->
+            </div>
+
+        <!-- /.row skills-section -->
+        </div>
+        <!-- /.hidden-xs.hidden-sm -->
+
+</section>
+<!-- /#skills.container-fluid -->
+
+<!-- <hr> --> <!-- section divider -->
+
+<section id="blog" class="container-fluid text-center grey-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h1>Blog</h1>
+
+                <hr> <!-- section divider -->
+
+                <p>Sometimes I like to blog about code to help me remember what I just learned. Click the link below to check out my Jekyll powered blog.</p>
+
+                <a href="http://moxdev.github.io/" title="Link to my blog" class="blog-button btn btn-lg btn-default">The Curious n00b</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /#blog.container-fluid -->
+
+<section id="resume" class="container-fluid text-center pink-section">
+    <div class="container">
+
+            <h1>Experience</h1>
+
+            <hr> <!-- section divider -->
+
+                <p>If you like what you see please click below to download my resume and contact me for an interview. I look forward to talking to you! </p>
+
+                    <a href="download/resume.pdf" download="Shane-Biggs-Resume.pdf" title="Download Resume" class="resume-button btn btn-lg btn-default">Resumé</a>
         </div>
         <!-- /.col-md-8 col-offset-2 -->
     </div>
@@ -152,111 +263,44 @@
 </section>
 <!-- /#resume.container -->
 
-<section id="skills" class="container-fluid text-center">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>Skills</h1>
+<section id="contact" class="container-fluid text-center grey-section">
+    <div class="container">
+        <div class="row contact-header">
+            <div class="col-md-8 col-md-offset-2">
+                <h1>Contact</h1>
+
+        <hr> <!-- section divider -->
+
+            </div>
+            <!-- /.col-md-12 -->
         </div>
-        <!-- /.col-md-12 -->
-    </div>
-    <!-- /.row -->
+        <!-- /.row contact-header -->
 
-    <div id="small-skills" class="visible-xs visible-sm">
-            <h4>* HTML5</h4>
-            <h4>* CSS3</h4>
-            <h4>* Javascript</h4>
-            <h4>* JQuery</h4>
-            <h4>* Github</h4>
-            <h4>* Wordpress</h4>
-            <h4>* Adobe Creative Cloud</h4>
-    </div>
-    <!-- /.visible-xs visible-sm -->
-
-    <div class="hidden-xs hidden-sm">
-        <div class="row svg-section">
-
-            <div class="col-md-3">
-                <img src="img/html5.png" alt="HTML5" />
-            </div>
-            <!-- /.col-md-3 -->
-
-            <div class="col-md-3">
-                <img src="img/css3.png" alt="CSS3"/>
-            </div>
-            <!-- /.col-md-3 -->
-
-            <div class="col-md-3">
-                <img src="img/js.png" alt="Javascript"/>
-            </div>
-            <!-- /.col-md-3 -->
-
-            <div class="col-md-3">
-                <img src="img/jquery.png" alt="JQuery"/>
-            </div>
-            <!-- /.col-md-3 -->
-
-        </div>
-    <!-- /.row.svg-section-->
-    </div>
-    <!-- /.hidden-xs.hidden.sm-->
-
-    <div class="hidden-xs hidden-sm">
-        <div class="row row-centered svg-section">
-            <div class="col-md-3 col-centered">
-                <img src="img/github.png" alt="Github" />
-            </div>
-            <!-- /.col-md-3 -->
-
-            <div class="col-md-3 col-centered">
-                <img src="img/bootstrap.png" alt="Wordpress" width="113" height="113" />
-            </div>
-            <!-- /.col-md-3 -->
-
-            <div class="col-md-3 col-centered">
-                <img src="img/cc.png" alt="Adobe Creative Cloud" />
+        <div class="row head-shot">
+            <div class="col-md-8 col-md-offset-2">
+                <img src="img/dbc.png" alt="head shot" id="head-shot" >
+                <p><a href="mailto:contact@shanebiggs.com"><i class="fa fa-envelope-o"></i> contact@shanebiggs.com</a></p>
             </div>
             <!-- /.col-md-3 -->
         </div>
+        <!-- /.row head-shot -->
 
-    <!-- /.row svg-section -->
-    </div>
-    <!-- /.hidden-xs.hidden-sm -->
-</section>
-<!-- /#skills.container -->
 
-<section id="blog" class="container text-center">
-    <h1>Blog</h1>
-    <p>Sometimes I like to blog about code to help me remember what I just learned. Click the link below to check out my Jekyll powered blog.</p>
-    <a href="http://moxdev.github.io/" title="Link to my blog" class="btn btn-lg btn-default">The Curious n00b</a>
+        <div class="row social-icons">
+            <div class="col-md-12">
+                <ul class="list-inline">
+                    <li><a href="http:/www.linkedin.com/in/shanebiggs" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/moxbiggs" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://github.com/moxdev" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a href="skype:srbiggs1?userinfo"><i class="fa fa-skype"></i></a></li>
+                </ul>
+            </div>
+            <!-- /.col-md-12 -->
+        </div>
+        <!-- /.row social-icons --></div>
 
 </section>
-<!-- /#blog.container -->
-
-<section id="contact" class="container text-center">
-    <div class="row contact-header">
-        <div class="col-md-12">
-            <h1>Contact</h1>
-        </div>
-        <!-- /.col-md-12 -->
-    </div>
-    <!-- /.row contact-header -->
-
-    <div class="row social-icons">
-        <div class="col-md-12">
-            <ul class="list-inline">
-                <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-github"></i></a></li>
-                <li><a href="#"><i class="fa fa-skype"></i></a></li>
-            </ul>
-        </div>
-        <!-- /.col-md-12 -->
-    </div>
-    <!-- /.row social-icons -->
-
-</section>
-<!-- /#contact.container -->
+<!-- /#contact.container-fluid -->
 
 
     <!-- Javascript -->

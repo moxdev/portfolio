@@ -60,17 +60,14 @@ textarea {
 
 @import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/* ==================== Default for document ========================== */
+
 * {
   border-radius: 0 !important;
   -webkit-border-radius: 0 !important;
      -moz-border-radius: 0 !important;
           border-radius: 0 !important;
-}
-
-.btn-default {
-  border: 1px solid #c80a48;
-  color: #c80a48;
-  background-color: transparent;
 }
 
 body {
@@ -82,9 +79,58 @@ body {
     background-color: #000;
 }
 
+* a {
+    color: #c80a48;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+* a:hover,:focus {
+    text-decoration: none;
+    color: #1d9b6c;
+}
+
+.btn-default {
+  border: 1px solid #c80a48;
+  color: #c80a48;
+  background-color: transparent;
+}
+
+.btn-default:hover {
+    background-color: #c80a48;
+    border: none;
+    color: #000;
+}
+
+
+hr {
+    border-color: inherit;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 20px;
+}
+
+.grey-section {
+  background-color: #121212;
+}
+
+.pink-section {
+    background-color: #c80a48;
+    color: #000;
+}
+.coming-soon {
+  border: 1px solid #fff;
+}
+
+
+/* Delete this class? =============================== */
+
 .light {
     font-weight: 400;
 }
+
+/* =================== Navbar ===============================*/
 
 /*nav.navbar.navbar-custom.navbar-fixed-top {
     border: 1px solid red;
@@ -101,74 +147,57 @@ body {
     font-weight: 700;
 }
 
-a {
-    color: #c80a48;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
+/*============== Intro ===========================*/
 
-a:hover,:focus {
-    text-decoration: none;
-    color: #1d9b6c;
-}
-
-
-.intro {
+#intro {
+    border: 1px solid red;
     display: table;
     width: 100%;
     height: 100%;
     padding: 100px 0;
     text-align: center;
     background-color: #000;
-    background: url(../img/desk.jpeg) no-repeat scroll;
+    background: url('../img/desk.jpeg') no-repeat scroll;
     background-size: 100% auto;
-    /*opacity: 0.2; filter: alpha(opacity=20);*/
-
-    /*-webkit-filter: blur(3px);
-  -moz-filter: blur(3px);
-  -o-filter: blur(3px);
-  -ms-filter: blur(3px);
-  filter: blur(3px);*/
+    /*filter: blur(1px) brightness(0.2);
+      -webkit-filter: blur(1px) brightness(0.2);
+      -moz-filter: blur(1px) brightness(0.2);
+      -o-filter: blur(1px) brightness(0.2);
+      -ms-filter: blur(1px) brightness(0.2);*/
 }
 
-
-
-.intro .intro-body {
+#intro .intro-body {
     display: table-cell;
     vertical-align: middle;
     color: #fff;
     text-shadow: 2px 2px #000;
-
-
 }
 
 .intro-body .container-fluid {
     background-color: #c80a48;
-
 }
-
 
 .brand-heading {
     font-size: 100px;
     font-weight: bold;
-
 }
 
 .intro-text {
     font-size: 40px;
 }
 
+/*=========== Blinking Cursor =============*/
+
 .blinking-cursor {
   font-weight: 100;
   font-size: 90px;
   color: #fff;
   text-shadow: none;
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
 }
 
 @keyframes "blink" {
@@ -215,9 +244,54 @@ a:hover,:focus {
     color: #fff;
   }
 }
-/*---------------------------------------*/
 
-.svg-section {
+/* ====== All Section Titles ======== */
+
+#profile h1, #portfolio h1, #resume h1, #skills h1, #blog h1, #contact h1  {
+  padding: 10px 0 20px 0;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#profile, #portfolio, #skills, #blog, #contact  {
+  padding-bottom: 50px;
+}
+
+/* ========= Profile ====================== */
+#profile {
+  padding: 0 0 20px 0;
+}
+
+/* ======== Portfolio ======================*/
+
+#portfolio {
+
+}
+
+/* ======== Resume ======================*/
+
+#resume {
+
+
+}
+
+.resume-button {
+  margin: 30px 0 10px 0;
+}
+
+/* ======== Skills ============================*/
+
+#skills {
+
+}
+
+/*.skills-header {
+  background-color: #c80a48;
+  color: #000;
+  border-bottom: 1px solid #000;
+}*/
+
+.skills-section {
     background-color: #c80a48;
 }
 
@@ -234,9 +308,42 @@ a:hover,:focus {
     margin-right:-4px;
 }
 
+/* ============ Blog ================= */
 
+#blog {
 
+}
+.blog-button {
+  margin: 30px 0 5px 0;
+}
 
+/* ============== Contact ============== */
+
+#contact {
+
+}
+
+.head-shot img {
+  margin: 10px;
+}
+.head-shot p {
+  font-size: 1.3em;
+  padding: 10px 0;
+}
+.social-icons {
+  font-size: 3em;
+  /*background-color: #c80a48;*/
+  }
+
+ /*.social-icons a {
+  color: #000;
+ }*/
+
+/*.social-icons a:hover {
+  text-decoration: none;
+    color: #fff;
+
+}*/
 
 
 
