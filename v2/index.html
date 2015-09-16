@@ -17,7 +17,7 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
 <!-- Navigation collapse for mobile -->
-    <nav class="navbar navbar-fixed-top  navbar-custom" role="navigation">
+    <nav class="navbar navbar-fixed-top navbar-default" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -43,7 +43,7 @@
                         <a class="page-scroll" href="#resume">Resume</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#skils">Skills</a>
+                        <a class="page-scroll" href="#skills">Skills</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#blog">Blog</a>
@@ -82,7 +82,7 @@
 
 <section id="profile" class="container text-center">
 
-            <h1>Aspiring WebDeveloper</h1>
+            <h1 class="section-title">Aspiring WebDeveloper</h1>
 
             <hr>
 
@@ -94,20 +94,13 @@
 </section>
 <!-- /#profile.container-fluid -->
 
-<!-- <hr> --> <!-- section divider -->
-
 <section id="portfolio" class="container-fluid text-center grey-section">
-    <div class="row container">
-        <div class="col-md-8 col-md-offset-3 portfolio-header">
-            <h1>Current Projects</h1>
-
-            <hr>
-        </div>
-        <!-- /.col-md-12 portfolio-header -->
-    </div>
-    <!-- /.row -->
 
     <div class="container">
+            <h1 class="section-title">Current Projects</h1>
+
+            <hr>
+
         <div class="row">
             <div class="col-md-4 portfolio-item">
                 <a href="http://tripstarter.herokuapp.com/#/" title="tripstarter" target="_blank">
@@ -115,7 +108,7 @@
                 </a>
                 <h3>TripStarter</h3>
                 <p>DBC Final Project</p>
-                <p>Tech Stack: Rails API, AngularJS, Bootstrap, HTML5, CSS3, JQuery</p>
+
             </div>
             <!-- /.col-md-4 portfolio-item -->
 
@@ -123,9 +116,9 @@
                 <a href="http://germantownorthopedic.com/" title="germantownorthopedic" target="_blank">
                     <img class="img-responsive" src="/img/go.png" alt="placeholder">
                 </a>
-                <h3>Gemantown Orthopedic</h3>
+                <h3>Germantown Orthopedic</h3>
                 <p>My first freelance project for a local client.</p>
-                <p>Tech Stack: HTML5, CSS3, Bootstrap, JQuery, SEO</p>
+
 
             </div>
             <!-- /.col-md-4 portfolio-item -->
@@ -135,30 +128,42 @@
                     <img class="img-responsive coming-soon" src="img/coming-soon.png" alt="coming-soon placeholder">
                 </a>
                 <h3>Good Things</h3>
-                <p>Coming Soon! Quickly enter and save the good things that happened to you that day to help remind you to appreciate the little things in life.</p>
+
+                <p>Quickly enter and save the good things that happened to you that day to help remind you to appreciate the little things in life.</p>
+
             </div>
             <!-- /.col-md-4 portfolio-item -->
         </div>
         <!-- /.row -->
+
+        <div class="row tech-stack-row">
+            <div class="col-md-4 tech-stack-description">
+                <p>Tech Stack: Rails API, AngularJS, Bootstrap, HTML5, CSS3</p>
+            </div>
+            <!-- /.col-md-4 tech-stack-description -->
+
+            <div class="col-md-4 tech-stack-description">
+                <p>Tech Stack: HTML5, CSS3, Bootstrap, JQuery, SEO</p>
+            </div>
+            <!-- /.col-md-4 tech-stack-description -->
+
+            <div class="col-md-4 tech-stack-description">
+                <p>Tech Stack: Rails, HTML5, CSS3, JQuery</p>
+            </div>
+            <!-- /.col-md-4 tech-stack-description -->
+        </div>
+        <!-- /.row -->
+
     </div>
     <!-- /.container -->
 </section>
 <!-- /#portfolio.container-fluid -->
 
-<!-- <hr> --> <!-- section divider -->
 
-<section id="skills" class=" container text-center">
-
-        <div class="row skills-header">
-            <div class="col-md-8 col-md-offset-2">
-                <h1>Skills</h1>
+<section id="skills" class="text-center">
+    <div class="container">
+                <h1 class="section-title">Skills</h1>
         <hr> <!-- section divider -->
-            </div>
-
-            <!-- /.col-md-12 -->
-        </div>
-        <!-- /.row -->
-
 
         <div id="small-skills" class="visible-xs visible-sm">
                 <h4>* HTML5</h4>
@@ -169,127 +174,101 @@
                 <h4>* Wordpress</h4>
                 <h4>* Adobe Creative Cloud</h4>
         </div>
-        <!-- /.visible-xs visible-sm -->
+        <!-- /#small-skills.visible-xs.visible-sm -->
+    </div>
+    <!-- /.container-->
 
-        <div class="skills-section">
-            <div class="hidden-xs hidden-sm">
-                <div class="row">
+    <div class="hidden-xs hidden-sm">
+        <div id="big-skills" class="pink-section">
+            <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="img/html5.png" alt="HTML5" />
+                            <p>HTML5</p>
+                        </div>
+                        <!-- /.col-md-3 -->
 
-                    <div class="col-md-3">
-                        <img src="img/html5.png" alt="HTML5" />
+                        <div class="col-md-2">
+                            <img src="img/css3.png" alt="CSS3"/>
+                            <p>CSS3</p>
+                        </div>
+                        <!-- /.col-md-3 -->
+
+                        <div class="col-md-2">
+                            <img src="img/js.png" alt="Javascript"/>
+                            <p>Javascript</p>
+                        </div>
+                        <!-- /.col-md-3 -->
+
+                        <div class="col-md-2">
+                            <img src="img/jquery.png" alt="JQuery"/>
+                            <p>JQuery</p>
+                        </div>
+                        <!-- /.col-md-3 -->
+
+                        <div class="col-md-2">
+                            <img src="img/github.png" alt="Github"/>
+                            <p>Github</p>
+                        </div>
+                        <!-- /.col-md-3 -->
+
+                        <div class="col-md-2">
+                            <img id="bootstrap-img" src="img/bootstrap114.png" alt="Twitter Bootstrap"/>
+                            <p id="move-bootstrap-down">Bootstrap</p>
+                        </div>
+                        <!-- /.col-md-3 -->
                     </div>
-                    <!-- /.col-md-3 -->
-
-                    <div class="col-md-3">
-                        <img src="img/css3.png" alt="CSS3"/>
-                    </div>
-                    <!-- /.col-md-3 -->
-
-                    <div class="col-md-3">
-                        <img src="img/js.png" alt="Javascript"/>
-                    </div>
-                    <!-- /.col-md-3 -->
-
-                    <div class="col-md-3">
-                        <img src="img/jquery.png" alt="JQuery"/>
-                    </div>
-                    <!-- /.col-md-3 -->
-
-                </div>
-            <!-- /.row.skills-section-->
+                    <!-- /.row-->
             </div>
-            <!-- /.hidden-xs.hidden.sm-->
+                <!-- /.container-->
         </div>
-        <!-- /.container-fluid-->
-
-        <div class="hidden-xs hidden-sm">
-            <div class="row-centered skills-section">
-                <div class="col-md-3 col-centered">
-                    <img src="img/github.png" alt="Github" />
-                </div>
-                <!-- /.col-md-3 -->
-
-                <div class="col-md-3 col-centered">
-                    <img src="img/bootstrap.png" alt="Wordpress" width="113" height="113" />
-                </div>
-                <!-- /.col-md-3 -->
-
-                <div class="col-md-3 col-centered">
-                    <img src="img/cc.png" alt="Adobe Creative Cloud" />
-                </div>
-                <!-- /.col-md-3 -->
-            </div>
-
-        <!-- /.row skills-section -->
-        </div>
-        <!-- /.hidden-xs.hidden-sm -->
-
+            <!-- /skills-section-color.text-center-->
+    </div>
+    <!-- /.hidden-xs.hidden.sm-->
 </section>
-<!-- /#skills.container-fluid -->
+<!-- /#skills.text-center-->
 
-<!-- <hr> --> <!-- section divider -->
-
-<section id="blog" class="container-fluid text-center grey-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h1>Blog</h1>
+<section id="blog" class="grey-section">
+    <div class="container text-center">
+                <h1 class="section-title">Blog</h1>
 
                 <hr> <!-- section divider -->
 
                 <p>Sometimes I like to blog about code to help me remember what I just learned. Click the link below to check out my Jekyll powered blog.</p>
 
                 <a href="http://moxdev.github.io/" title="Link to my blog" class="blog-button btn btn-lg btn-default">The Curious n00b</a>
-            </div>
-        </div>
     </div>
 </section>
-<!-- /#blog.container-fluid -->
+<!-- /#blog.grey-section -->
 
-<section id="resume" class="container-fluid text-center pink-section">
-    <div class="container">
+<section id="resume">
+    <div class="container text-center">
 
-            <h1>Experience</h1>
+            <h1 class="section-title">Experience</h1>
 
             <hr> <!-- section divider -->
 
                 <p>If you like what you see please click below to download my resume and contact me for an interview. I look forward to talking to you! </p>
 
                     <a href="download/resume.pdf" download="Shane-Biggs-Resume.pdf" title="Download Resume" class="resume-button btn btn-lg btn-default">Resumé</a>
-        </div>
-        <!-- /.col-md-8 col-offset-2 -->
     </div>
-    <!-- /.row -->
+        <!-- /.container.text-center -->
 </section>
-<!-- /#resume.container -->
+<!-- /section#resume -->
 
-<section id="contact" class="container-fluid text-center grey-section">
-    <div class="container">
-        <div class="row contact-header">
-            <div class="col-md-8 col-md-offset-2">
-                <h1>Contact</h1>
+<section id="contact" class="grey-section">
+    <div class="container text-center">
+                <h1 class="section-title">Contact</h1>
 
         <hr> <!-- section divider -->
 
-            </div>
-            <!-- /.col-md-12 -->
-        </div>
-        <!-- /.row contact-header -->
-
-        <div class="row head-shot">
-            <div class="col-md-8 col-md-offset-2">
-                <img src="img/dbc.png" alt="head shot" id="head-shot" >
+                <img id="head-shot" src="img/dbc.png" alt="head shot">
                 <p><a href="mailto:contact@shanebiggs.com"><i class="fa fa-envelope-o"></i> contact@shanebiggs.com</a></p>
-            </div>
-            <!-- /.col-md-3 -->
-        </div>
-        <!-- /.row head-shot -->
-
 
         <div class="row social-icons">
             <div class="col-md-12">
                 <ul class="list-inline">
-                    <li><a href="http:/www.linkedin.com/in/shanebiggs" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https:/www.linkedin.com/in/shanebiggs" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                     <li><a href="https://twitter.com/moxbiggs" target="_blank"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="https://github.com/moxdev" target="_blank"><i class="fa fa-github"></i></a></li>
                     <li><a href="skype:srbiggs1?userinfo"><i class="fa fa-skype"></i></a></li>
@@ -298,6 +277,8 @@
             <!-- /.col-md-12 -->
         </div>
         <!-- /.row social-icons --></div>
+</div>
+        <!-- /.container.text-center -->
 
 </section>
 <!-- /#contact.container-fluid -->
