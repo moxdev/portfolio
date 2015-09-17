@@ -69,9 +69,7 @@ textarea {
      -moz-border-radius: 0 !important;
           border-radius: 0 !important;
 }
-/*#page-top {
-  margin-top: 70px;
-}*/
+
 body {
     padding-top: 40px;
     width: 100%;
@@ -80,11 +78,12 @@ body {
     color: #a1a1a1;
     background-color: #000;
     font-size: 18px;
+    position: relative;
 
 }
 
 section {
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 
@@ -138,12 +137,6 @@ hr {
 }
 
 
-/* Delete this class? =============================== */
-
-.light {
-    font-weight: 400;
-}
-
 /* =================== Navbar ===============================*/
 
 /*nav.navbar.navbar-custom.navbar-fixed-top {
@@ -151,11 +144,11 @@ hr {
 }*/
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid #c80a48;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #000;
     color: #fff;
+    /*font-weight: 700;*/
 }
 
 .navbar-custom a {
@@ -170,6 +163,11 @@ hr {
   background-color: transparent;
 }
 
+/*.navbar-custom > li > a > .active,
+.navbar-custom > li > a:hover > .active {
+  color: #d8537e;
+}*/
+
 /*.navbar-custom .navbar-brand {
     font-weight: 700;
 }*/
@@ -180,36 +178,55 @@ hr {
     display: table;
     width: 100%;
     height: 100%;
-    padding: 100px 0;
+    /*padding: 100px 0;*/
     text-align: center;
     background-color: #000;
-    background: url('../img/desk.jpeg') no-repeat scroll;
-    background-size: 100% auto;
-    /*filter: blur(1px) brightness(0.2);
-      -webkit-filter: blur(1px) brightness(0.2);
-      -moz-filter: blur(1px) brightness(0.2);
-      -o-filter: blur(1px) brightness(0.2);
-      -ms-filter: blur(1px) brightness(0.2);*/
+    background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ), url('../img/desk.jpeg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+
+
 }
 
 #intro .intro-body {
     display: table-cell;
     vertical-align: middle;
     color: #fff;
-    text-shadow: 2px 2px #000;
-}
+    /*text-shadow: 2px 2px #000;*/
 
-.intro-body .container-fluid {
-    background-color: #c80a48;
 }
+/* Intro Color change */
+/*.intro-body .container-fluid {
+    background-color: #c80a48;
+}*/
 
 .brand-heading {
     font-size: 100px;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 .intro-text {
     font-size: 40px;
+}
+.arrow {
+  font-size: 2em;
+  color: #fff;
+}
+
+.arrow a, {
+  color: #fff;
+}
+
+.arrow a:visited {
+  color: #fff;
+}
+.intro-welcome {
+    font-size: 1.5em;
 }
 
 /*=========== Blinking Cursor =============*/
@@ -291,26 +308,49 @@ hr {
 
 #profile p {
   text-align: justify;
-}
+   margin-left: 60px;
+   margin-right: 60px;
 
 /* ======== Portfolio ======================*/
 
 #portfolio {
-
 }
 
-.tech-stack-row {
-  padding: 10px 0;
+#portfolio h3 {
+  color: #fff;
+  padding: .8em 0;
 }
+
+.tech-stack {
+  margin-top: 10px;
+}
+
+.same-size-portfolio-descriptions {
+    display: table;
+    height: 100px;
+    width: 350px;
+    table-layout: fixed;
+    margin-bottom: 20px;
+}
+
+.same-size-portfolio-descriptions p {
+    display: table-cell;
+    border: 1px dotted red;
+    padding: 4px 6px;
+    width: 2%;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
 /* ======== Resume ======================*/
 
 #resume {
-
-
 }
 
 .resume-button {
-  margin: 30px 0 10px 0;
+  margin: 2em 0 2.5em 0;
+  padding-right: 3em;
+  padding-left: 3em;
 }
 
 /* ======== Skills ============================*/
@@ -357,10 +397,11 @@ hr {
 /* ============ Blog ================= */
 
 #blog {
-
+  /*padding-bottom: 2.5em;*/
 }
 .blog-button {
-  margin: 30px 0 5px 0;
+  margin: 2em 0 2.5em 0;
+  /*margin: 30px 0 5px 0;*/
 }
 
 /* ============== Contact ============== */
@@ -369,16 +410,11 @@ hr {
 
 }
 
-.head-shot img {
-  margin: 10px;
-}
-.head-shot p {
-  font-size: 1.3em;
-  padding: 10px 0;
+#contact-email  {
+  padding-top: 1.5em;
 }
 .social-icons {
   font-size: 3em;
-  /*background-color: #c80a48;*/
   }
 
  /*.social-icons a {
@@ -391,6 +427,10 @@ hr {
 
 }*/
 
+footer {
+  text-align: center;
+
+}
 
 
 

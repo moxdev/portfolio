@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="20">
+    <!-- FIX Bootstrap scrollspy -->
 
 <!-- Navigation collapse for mobile -->
     <nav class="navbar navbar-fixed-top navbar-custom" role="navigation">
@@ -24,17 +25,18 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i> <span class="light">Look At Me</span>
+                    <i class="fa fa-play-circle"></i> <span class="light">sb</span>
                 </a>
             </div>
             <!-- /.navbar-header -->
+
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="hidden">
+                    <li class="active">
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll active" href="#profile">Profile</a>
+                        <a class="page-scroll" href="#profile">Profile</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
@@ -62,23 +64,14 @@
 
 <header id="intro">
     <div class="intro-body">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 glass">
                     <h1 class="brand-heading">Shane Biggs<span class="blinking-cursor">_</span></h1>
-                    <p class="intro-text">Come have a look at some of my work</p>
-                    <!-- /.intro-text -->
-                    <!-- /.brand-heading -->
-                </div>
-                <!-- /.col-md-8 col-md-offset-2 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
+                    <p class="intro-text">Coffee Shop Coder / Wannabe Musician / Sci-Fi Geek
+                    <p class="intro-welcome">Come have a look at some of my work</p>
+                    <p><a class="arrow" href="#profile"><i class="fa fa-arrow-circle-down"></i></a></p>
     </div>
     <!-- /.intro-body -->
 </header>
-<!-- /.intro -->
+<!-- /#header.intro -->
 
 <section id="profile" class="container text-center">
 
@@ -86,13 +79,12 @@
 
             <hr>
 
-            <p>A recent graduate of Devbootcamp in San Francisco looking for full time opportunities in the Washington DC / Baltimore Metro area.</p>
+            <p>A recent graduate of Dev Bootcamp in San Francisco looking to level up my skills with a full time coding position in the Washington DC / Baltimore Metro area.</p>
+            <p>I'm looking to join a team that can nurture my budding skills</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta qui, soluta cumque quos non, eos magnam dolorem quaerat unde perspiciatis odit similique commodi consectetur accusamus eum totam sapiente mollitia harum, a autem tempora! Totam cumque, facilis nemo dolore doloremque! Doloremque nulla accusamus maiores, laborum perferendis quidem, aliquam ducimus tenetur amet.</p>
-
-
+            <p>If you, your company, or even your grandmother are looking for a highly motivated code newbie to to add to your project, please feel free to check out my work below and give me a ring if you like what you see.</p>
 </section>
-<!-- /#profile.container-fluid -->
+<!-- /section#profile.container-fluid -->
 
 <section id="portfolio" class="container-fluid text-center grey-section">
 
@@ -107,7 +99,16 @@
                     <img class="img-responsive" src="img/trip2.png" alt="placeholder">
                 </a>
                 <h3>TripStarter</h3>
-                <p>DBC Final Project</p>
+                <hr>
+                <div class="same-size-portfolio-descriptions">
+                <p>Dev Bootcamp Final Project: 4 Team member group project. We had 1 week to create a fully functional Web App. I was mostly responsible for the front-end but did also contribute the Rails/Angular backend.</p>
+                </div>
+                <!-- /.same-size-portfolio-descriptions -->
+
+
+
+                <p class="tech-stack">Tech Stack: Rails API, AngularJS, Bootstrap, HTML5, CSS3</p>
+
 
             </div>
             <!-- /.col-md-4 portfolio-item -->
@@ -117,7 +118,12 @@
                     <img class="img-responsive" src="/img/go.png" alt="placeholder">
                 </a>
                 <h3>Germantown Orthopedic</h3>
+                <hr>
+                <div class="same-size-portfolio-descriptions">
                 <p>My first freelance project for a local client.</p>
+                </div>
+                <p class="tech-stack">Tech Stack: HTML5, CSS3, Bootstrap, JQuery, SEO</p>
+
 
 
             </div>
@@ -128,29 +134,14 @@
                     <img class="img-responsive coming-soon" src="img/coming-soon.png" alt="coming-soon placeholder">
                 </a>
                 <h3>Good Things</h3>
-
+                <hr>
+                <div class="same-size-portfolio-descriptions">
                 <p>Quickly enter and save the good things that happened to you that day to help remind you to appreciate the little things in life.</p>
+                </div>
+                <p class="tech-stack">Tech Stack: Rails, HTML5, CSS3, JQuery</p>
 
             </div>
             <!-- /.col-md-4 portfolio-item -->
-        </div>
-        <!-- /.row -->
-
-        <div class="row tech-stack-row">
-            <div class="col-md-4 tech-stack-description">
-                <p>Tech Stack: Rails API, AngularJS, Bootstrap, HTML5, CSS3</p>
-            </div>
-            <!-- /.col-md-4 tech-stack-description -->
-
-            <div class="col-md-4 tech-stack-description">
-                <p>Tech Stack: HTML5, CSS3, Bootstrap, JQuery, SEO</p>
-            </div>
-            <!-- /.col-md-4 tech-stack-description -->
-
-            <div class="col-md-4 tech-stack-description">
-                <p>Tech Stack: Rails, HTML5, CSS3, JQuery</p>
-            </div>
-            <!-- /.col-md-4 tech-stack-description -->
         </div>
         <!-- /.row -->
 
@@ -262,8 +253,8 @@
 
         <hr> <!-- section divider -->
 
-                <img id="head-shot" src="img/dbc.png" alt="head shot">
-                <p><a href="mailto:contact@shanebiggs.com"><i class="fa fa-envelope-o"></i> contact@shanebiggs.com</a></p>
+                <img id="head-shot" src="img/dbc2.png" alt="head shot">
+                <p id="contact-email"><a href="mailto:contact@shanebiggs.com"><i class="fa fa-envelope-o"></i> contact@shanebiggs.com</a></p>
 
         <div class="row social-icons">
             <div class="col-md-12">
@@ -276,12 +267,16 @@
             </div>
             <!-- /.col-md-12 -->
         </div>
-        <!-- /.row social-icons --></div>
+        <!-- /.row social-icons -->
 </div>
         <!-- /.container.text-center -->
-
 </section>
 <!-- /#contact.container-fluid -->
+
+<footer>
+    <p>Made by Mox</p>
+
+</footer>
 
 
     <!-- Javascript -->
